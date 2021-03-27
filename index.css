@@ -20,7 +20,7 @@ body {
 
 .container {
   position: relative;
-  width: 350px;
+  width: min(350px, 90%);
   height: 550px;
   background-color: white;
   display: flex;
@@ -41,7 +41,7 @@ body {
 }
 .accordion_item {
   border-bottom: solid 2px hsl(240, 5%, 91%);
-  font-size: 12px;
+  font-size: 0.75rem;
   cursor: pointer;
   padding: 5%;
   padding-left: 0px;
@@ -53,7 +53,7 @@ body {
 .question {
   color: hsl(237, 12%, 33%);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .accordion_item:hover .question {
@@ -77,7 +77,7 @@ body {
   padding-top: 10px;
 }
 
-@media screen and (max-width:999.99px) {
+@media only screen and (max-width:999.99px) {
   .container {
     margin-top: 120px;
     background-image: url("./images/bg-pattern-mobile.svg");
@@ -149,7 +149,7 @@ body {
   }
   .accordion_title {
     text-align: left;
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
@@ -168,6 +168,6 @@ body {
   will-change: true;
   transform: rotate(-180deg);
   transition: transform 350ms;
-} 
-.attribution { font-size: 11px; text-align: center; }
+}
+.attribution { font-size: 0.6875rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
